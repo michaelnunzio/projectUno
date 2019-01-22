@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>The Buzzer</title>
+
+<link rel="stylesheet" href="./assets/css/reset.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="./assets/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<!--ANUMATE??-->
+<link rel="stylesheet" href="animate.min.css">
+
+</head>
+<body>
+
+
+        
+       
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <br>
+                    <br>
+                  <h1 class="display-4">The Buzzer</h1> <span class="dot"></span>
+                  <p class="lead animated shake">Your Local Sports & Food </p>
+                </div>
+              </div>
+
+<div class=teamInfo class="col-md-12"></div>
+    
+    <div class="teamContainer">
+        
+
+        <div class="col-md-1"></div>
+        <div id="images" class="col-md-10"></div>
+        <div class="col-md-1"></div>
+            
+        <br>    
+    </div>
+
+
+
+        <div class="row-fluid gamesRow">
+            <div class="col-sm-12">
+                <p class= "gamesTxt">Todays Live Games:</p>
+        <div id="todayScores"></div>
+    
+        </div>
+    
+
+    
+    </div>
+    
+
+
+ <!--Divs to append team data-->
+ <div class="col-md-6" id="showInfo">
+        <div>
+            <!-- Team: -->
+            <span id="teamName" >
+            </span>
+        </div>
+
+        <div >
+            <!-- Conference: -->
+            <span id="teamConf">
+
+            </span>
+        </div>
+
+        <div> <!--Standings:-->
+            <span id="teamWins" ></span>
+            <span id="teamLosses" ></span>
+        </div>
+
+        <div>
+            <span id="divisionWins"></span>
+        </div>
+
+        <div>
+            <span id="divisionLosses"></span>
+        </div>
+
+        <div>
+            <span id="streak"></span>
+        </div>
+
+        <div>
+            <span id="gamesBack"></span>
+        </div>
+
+        <div>
+            <span id="percentage"></span>
+        </div>
+
+        
+
+        <div> 
+            <!-- Roster: -->
+                <div class="scrollBoxRoster">
+
+                </div> <!--Roster scroll end-->
+
+        </div>
+    </div>
+
+
+    <!--places API-->
+        <input id="pac-input" class="controls" type="text"
+            placeholder="Enter a location">
+            <div class= "mapLoc">
+        <div id="map"></div>
+            </div> <!--Map loc complete-->
+        <div id="infowindow-content">
+        <span id="place-name"  class="title"></span><br>
+        Place ID <span id="place-id"></span><br>
+        <span id="place-address"></span>
+        </div>
+
+
+
+        
+       
+        
+
+
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7TE4cFhhyLquzYnqgpAKY9USJcOf4ErA&libraries=places&callback=initMap"
+        async defer></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="./assets/javascript/main.js"></script>
+</body>
+
+<footer>
+<div class="container-fluid fixed-bottom footBar">
+        <div class="row" id="navRow">
+
+                <div class="col-sm-7 buzzerPhoto"></div> <!--blank??-->
+               
+                <div class="col-sm-1 aboutCol">
+                        <div><a href="index.html">Home</a></div>
+                    </div>
+
+                <div class="col-sm-1 aboutCol">
+                    <div><a href="about.html">About</a></div>
+                </div>
+
+                <div class= "col-sm-1 ContactCol">
+                    <div class="navLink"><a href="contact.html">Contact</a></div>
+                </div>
+
+    </div> <!--ROW END-->
+</div>
+
+</footer>
+</html>
